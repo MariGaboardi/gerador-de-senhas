@@ -66,5 +66,5 @@ function geraSenha() {
 
 }
 function classificaSenha(){
-
+forcaSenha.classList.add('forte');
 }
