@@ -11,6 +11,7 @@ const campoSenha = document.querySelector('#campo-senha');
 const checkbox = document.querySelectorAll('.checkbox');
 
 const forcaSenha = document.querySelector('.forca');
+
 botoes[0].onclick = diminuiTamanho;
 botoes[1].onclick = aumentaTamanho;
 
@@ -30,6 +31,7 @@ function aumentaTamanho() {
     numeroSenha.textContent = tamanhoSenha;
     geraSenha();
 }
+
 
 
 for (i = 0; i < checkbox.length; i++) {
@@ -64,15 +66,16 @@ function geraSenha() {
     }
     campoSenha.value = senha;
     classificaSenha();
-
 }
 function classificaSenha(){
 forcaSenha.classList.remove('fraca','media','forte');
+
 if (tamanhoSenha > 11){
 forcaSenha.classList.add('forte');
+}
 else {
 forcaSenha.classList.add('media');
 }
-}
+
 forcaSenha.classList.add('forte');
 }
